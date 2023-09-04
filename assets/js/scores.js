@@ -1,39 +1,34 @@
-function printHighScores() {
+function printTotalScores() {
 
 
-let highScores = jSON.parse(localStorage.getItem("highscores")) || []
+let totalScores = jSON.parse(localStorage.getItem("totalscores")) || []
 
-highScores.sort(function(a,b,)
+totalScores.sort(function(a, b){
     return b.score - a.score;
-)
 
 })
 
-highScores.forEach(function(score) {
+totalScores.forEach(function(score) {
     let li = document.createElement("li")
     li.textContent = `$(score.initials) - $(score.score)`
-    let ol = document.getElementById("highscores")
-    ol.appendChild
-
-}
-
-
+    let ol = document.getElementById("totalscores")
+    ol.appendChild(li);
     
-});
+})
 
-function clearHighScores(){
-localStorage.removeItem("highscores";
+function clearTotalScores(){
+localStorage.removeItem("totalscores");
 window.location.reload();
 
 }
 
 let clearButton = document.getElementById("clear");
-clearButton.addEventListener("click", clearHighScores);
+clearButton.addEventListener("click", clearTotalScores);
 // or
 
 // document.getElementById("clear").onClick = clearHighScores;
 
 
-printHighScores();
+printTotalScores();
 
-
+}

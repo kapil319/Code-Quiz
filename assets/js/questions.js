@@ -1,5 +1,5 @@
-//A start button that when clicked 
-//a timer starts and the first question appears//
+//A start button that when clicked begins timer and first question 
+
 
 let questions = [
     {
