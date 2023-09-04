@@ -13,7 +13,7 @@ How? incuding multiple js files for logic / questions / scores to link to html c
 
 ## Deployed Webpage Link
 
-
+https://kapil319.github.io/Code-Quiz/
 
 
 ## Installation
