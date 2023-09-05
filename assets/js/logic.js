@@ -1,7 +1,7 @@
 //Timer Variables//
 
 let currentQuestionIndex = 0;
-let time = question.length * 10;
+let time = questions.length * 10;
 let timerID;
 
 // Elements for HTML//
@@ -38,7 +38,7 @@ function questionClick() {
     setTimeout(function() {
         feedBackElement.setAttribute("class", "feedback hide")
 
-    }, 500);
+    }, 1000);
 
     currentQuestionIndex++;
 
@@ -54,7 +54,7 @@ function startQuiz(){
     let startScreenElement = document.getElementById("start-screen");
         startScreenElement.setAttribute("class", "hide");
         questionsElement.removeAttribute("class");
-        timerID = setInterval(clockTick, 500)
+        timerID = setInterval(clockTick, 1000)
     
         timerElement.textContent = time;
     
